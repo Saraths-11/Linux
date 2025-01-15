@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Commands Guide</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+
+    <!-- Header and Navigation Bar -->
+    <header>
+        <h1>Linux Commands Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="#init">init</a></li>
+                <li><a href="#useradd">useradd</a></li>
+                <li><a href="#usermod">usermod</a></li>
+                <li><a href="#userdel">userdel</a></li>
+                <li><a href="#groupadd">groupadd</a></li>
+                <li><a href="#groupmod">groupmod</a></li>
+                <li><a href="#groupdel">groupdel</a></li>
+                <li><a href="#passwd">passwd</a></li>
+                <li><a href="#sudo">sudo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="init" class="command-section">
+            <h2>init Command</h2>
+            <p><strong>Description:</strong> The `init` command is used to change the runlevel of the system. It controls the initialization of processes and services during bootup.</p>
+            <p><strong>Usage:</strong> `init <runlevel>`</p>
+            <pre><code>init 3</code></pre>
+            <p><strong>Example:</strong> The command `init 3` will switch the system to multi-user mode without a graphical user interface.</p>
+            <img src="images/init.jpg" alt="init Command Example" class="command-image">
+        </section>
+
+        <section id="useradd" class="command-section">
+            <h2>useradd Command</h2>
+            <p><strong>Description:</strong> The `useradd` command is used to create a new user account on a Linux system.</p>
+            <p><strong>Usage:</strong> `useradd <username>`</p>
+            <pre><code>useradd johndoe</code></pre>
+            <p><strong>Example:</strong> The command `useradd johndoe` will create a new user called `johndoe` on the system.</p>
+            <img id="img"src="images/userdel  .jpg" alt="useradd Command Example" class="command-image">
+        </section>
+
+        <section id="usermod" class="command-section">
+            <h2>usermod Command</h2>
+            <p><strong>Description:</strong> The `usermod` command is used to modify an existing user account, such as changing their group membership or login shell.</p>
+            <p><strong>Usage:</strong> `usermod -<option> <username>`</p>
+            <pre><code>usermod -aG sudo johndoe</code></pre>
+            <p><strong>Example:</strong> The command `usermod -aG sudo johndoe` adds the user `johndoe` to the `sudo` group.</p>
+            <img src="images/usermod .jpg" alt="usermod Command Example" class="command-image">
+        </section>
+
+        <section id="userdel" class="command-section">
+            <h2>userdel Command</h2>
+            <p><strong>Description:</strong> The `userdel` command is used to delete a user account from the system.</p>
+            <p><strong>Usage:</strong> `userdel <username>`</p>
+            <pre><code>userdel johndoe</code></pre>
+            <p><strong>Example:</strong> The command `userdel johndoe` will delete the user `johndoe` from the system.</p>
+            <img src="images/userdel  .jpg" alt="userdel Command Example" class="command-image">
+        </section>
+
+        <section id="groupadd" class="command-section">
+            <h2>groupadd Command</h2>
+            <p><strong>Description:</strong> The `groupadd` command is used to create a new user group.</p>
+            <p><strong>Usage:</strong> `groupadd <groupname>`</p>
+            <pre><code>groupadd developers</code></pre>
+            <p><strong>Example:</strong> The command `groupadd developers` will create a new user group called `developers`.</p>
+            <img src="images/groupadd .jpg" alt="groupadd Command Example" class="command-image">
+        </section>
+
+        <section id="groupmod" class="command-section">
+            <h2>groupmod Command</h2>
+            <p><strong>Description:</strong> The `groupmod` command is used to modify an existing group, such as changing the group's name or its GID (group ID).</p>
+            <p><strong>Usage:</strong> `groupmod -<option> <groupname>`</p>
+            <pre><code>groupmod -n admins developers</code></pre>
+            <p><strong>Example:</strong> The command `groupmod -n admins developers` changes the name of the `developers` group to `admins`.</p>
+            <img src="images/groupmod.jpg" alt="groupmod Command Example" class="command-image">
+        </section>
+
+        <section id="groupdel" class="command-section">
+            <h2>groupdel Command</h2>
+            <p><strong>Description:</strong> The `groupdel` command is used to delete an existing group from the system.</p>
+            <p><strong>Usage:</strong> `groupdel <groupname>`</p>
+            <pre><code>groupdel developers</code></pre>
+            <p><strong>Example:</strong> The command `groupdel developers` will delete the `developers` group from the system.</p>
+            <img src="images/groupdel .jpg" alt="groupdel Command Example" class="command-image">
+        </section>
+
+        <section id="passwd" class="command-section">
+            <h2>passwd Command</h2>
+            <p><strong>Description:</strong> The `passwd` command is used to change a user's password on the system.</p>
+            <p><strong>Usage:</strong> `passwd <username>`</p>
+            <pre><code>passwd johndoe</code></pre>
+            <p><strong>Example:</strong> The command `passwd johndoe` will prompt to change the password for the user `johndoe`.</p>
+            <img src="images/passwd .jpg" alt="passwd Command Example" class="command-image">
+        </section>
+
+        <section id="sudo" class="command-section">
+            <h2>sudo Command</h2>
+            <p><strong>Description:</strong> The `sudo` command allows a permitted user to execute a command as the superuser or another user.</p>
+            <p><strong>Usage:</strong> `sudo <command>`</p>
+            <pre><code>sudo apt update</code></pre>
+            <p><strong>Example:</strong> The command `sudo apt update` updates the package list in Ubuntu-based systems with superuser privileges.</p>
+            <img src="images/sudo .jpg" alt="sudo Command Example" class="command-image">
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Sarath S Kumar</p>
+    </footer>
+
+</body>
+</html>
